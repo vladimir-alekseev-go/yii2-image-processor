@@ -24,12 +24,12 @@
   "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
-      "vladimir-alekseev-go\\yii2\\imageprocessor\\": "src/"
+      "phtamas\\yii2\\imageprocessor\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "vladimir-alekseev-go\\yii2\\imageprocessor\\test\\": "test/"
+      "phtamas\\yii2\\imageprocessor\\test\\": "test/"
     }
   }
 }
