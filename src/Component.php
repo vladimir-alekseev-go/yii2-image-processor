@@ -185,13 +185,16 @@ class Component extends BaseComponent
     private function createImagine()
     {
         $driver = null;
-        while (!$driver && list($index, $driverName) = each($this->drivers)) {
+        foreach ($this->drivers as $driverName) {
             if ($driverName === 'gmagick' && class_exists('Gmagick', false)) {
                 $driver = new ImagineGmagick();
             } elseif ($driverName === 'imagick' && class_exists('Imagick', false)) {
                 $driver = new ImagineImagick();
             } elseif ($driverName === 'gd' && function_exists('gd_info')) {
                 $driver = new ImagineGd();
+            }
+            if ($driver) {
+                break;
             }
         }
         if (!$driver) {
