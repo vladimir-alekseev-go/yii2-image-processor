@@ -7,7 +7,7 @@ Ad-hoc processing is also supported but if heavy and complex image manipulation 
 Install via Composer:
 ```json
     "require": {
-        "phtamas/yii2-imageprocessor": "0.5.*"
+        "vladimir-alekseev-go/yii2-image-processor": "*"
     }
 ```
 Configure it in the 'components' section of your application configuration:
